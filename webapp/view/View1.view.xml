@@ -1,0 +1,116 @@
+<mvc:View
+    controllerName="com.sap.vendorassessment.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <Table
+                id="Table"
+                items="{myModel>/}"
+               
+            >
+                <headerToolbar>
+                    <Toolbar id="_IDGenToolbar1">
+                        <HBox
+                            id="_IDGenHBox1"
+                            alignItems="Center"
+                            width="auto"
+                            justifyContent="SpaceAround"
+                        >
+                            
+                            <SearchField
+                                id="_IDGenSearchField1"
+                                value=""
+                                liveChange="onchange"
+                                class="sapUiTinyMarginEnd"
+                                
+                            />
+                                                                                    
+                           
+                             <Button id="_IDGenButton3"
+                            text="Create Vendor Assessment"
+                            type="Emphasized"
+                            press="onCreate"
+                            class="sapUiTinyMarginBegin"
+                            
+                            />
+                                                        
+                        </HBox>
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column id="_IDGenColumn1">
+                        <Text
+                            id="_IDGenText2"
+                            text="Assessment ID"
+                        />
+                    </Column>
+                    <Column id="_IDGenColumn2">
+                        <Text
+                            id="_IDGenText3"
+                            text="Assessment title"
+                        />
+                    </Column>
+                    <Column id="_IDGenColumn3">
+                        <Text
+                            id="_IDGenText4"
+                            text="Assessment templete ID"
+                        />
+                    </Column>
+                    <Column id="_IDGenColumn4">
+                        <Text
+                            id="_IDGenText5"
+                            text="Current Status"
+                        />
+                    </Column>
+
+                    <Column id="BIN">
+                        <Text id="_IDGenText10" text="Conducted By" />
+                    </Column>
+                    <Column id="VAT">
+                        <Text id="_IDGenText11" text="Conducted on" />
+                    </Column>
+                    
+                    <Column id="Actions">
+                        <Text id="_IDGenText17" text="Action" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="_IDGenColumnListItem1">
+                        <cells>
+                            <Text
+                                id="_IDGenText6"
+                                text="{myModel>assessmentid}"
+                            />
+                            <Text
+                                id="_IDGenText7"
+                                text="{myModel>assessmenttitle}"
+                            />
+                            <Text
+                                id="_IDGenText8"
+                                text="{myModel>assessmenttempleteid}"
+                            />
+                            <Text
+                                id="_IDGenText9"
+                                text="{myModel>currentstatus}"
+                            />
+
+                            <Text id="_IDGenText18" text="{myModel>conductedby}" />
+                            <Text id="_IDGenText19" text="{myModel>conductedon}" />
+                            
+                            <Button id="_IDGenButton5"
+                                text="View Details"
+                                press="onNav"
+                            />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
