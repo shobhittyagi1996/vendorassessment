@@ -17,7 +17,7 @@ sap.ui.define([
 
                         "assessmenttempleteid": "TEM1101",
                         "currentstatus": "Confirmed",
-                        "conductedby": "Alex",
+                        "conductedby": "danara",
                         "conductedon": "22-03-2024"
 
                     },
@@ -27,7 +27,7 @@ sap.ui.define([
 
                         "assessmenttempleteid": "TEM1102",
                         "currentstatus": "Pending",
-                        "conductedby": "Austin",
+                        "conductedby": "danara",
                         "conductedon": "24-03-2024"
 
 
@@ -37,7 +37,7 @@ sap.ui.define([
                         "assessmenttitle": "Vendor check",
 
                         "assessmenttempleteid": "TEM1105",
-                        "currentstatus": "Confirmed",
+                        "currentstatus": "danara",
                         "conductedby": "Alex",
                         "conductedon": "23-03-2024"
 
@@ -49,7 +49,7 @@ sap.ui.define([
 
                         "assessmenttempleteid": "TEM1103",
                         "currentstatus": "Pending",
-                        "conductedby": "john",
+                        "conductedby": "danara",
                         "conductedon": "22-03-2024"
 
                     },
@@ -59,7 +59,7 @@ sap.ui.define([
 
                         "assessmenttempleteid": "TEM1104",
                         "currentstatus": "Pending",
-                        "conductedby": "james",
+                        "conductedby": "danara",
                         "conductedon": "22-03-2024"
 
 
