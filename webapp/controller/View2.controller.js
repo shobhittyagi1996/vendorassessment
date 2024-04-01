@@ -130,6 +130,7 @@ sap.ui.define([
                         "text": "SUP34567"
                     }];
 
+                    
 
                 let Model = new JSONModel(atDropdown);
                 this.getView().setModel(Model, "atModel")
@@ -142,8 +143,7 @@ sap.ui.define([
 
 
 
-            },
-
+            }
 
         });
     });

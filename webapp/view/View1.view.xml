@@ -77,7 +77,7 @@
                     </Column>
                     
                     <Column id="Actions">
-                        <Text id="_IDGenText17" text="Action" />
+                        <Text id="_IDGenText17" text="Supplier Responses" />
                     </Column>
                 </columns>
                 <items>
@@ -104,8 +104,8 @@
                             <Text id="_IDGenText19" text="{myModel>conductedon}" />
                             
                             <Button id="_IDGenButton5"
-                                text="View Details"
-                                press="onNav"
+                                text="See Details"
+                                press="onSee"
                             />
                         </cells>
                     </ColumnListItem>

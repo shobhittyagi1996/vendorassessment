@@ -1,0 +1,79 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Dialog
+        id="_IDGenDi11alog111bb"
+        title=""
+        contentWidth="900px"
+    >
+        <content>
+            <Table
+                id="Table1"
+                items="{fModel>/}"
+            >
+                <columns>
+                    <Column id="_IDcolumn1">
+                        <Text
+                            id="_IDText2"
+                            text="Supplier ID"
+                        />
+                    </Column>
+                    <Column id="_IDcolumn2">
+                        <Text
+                            id="_IDText3"
+                            text="Supplier Name"
+                        />
+                    </Column>
+                    <Column id="_IDColumn3">
+                        <Text
+                            id="_IDText4"
+                            text="Assessment Status"
+                        />
+                    </Column>
+                    <Column id="_IDColumn4">
+                        <Text
+                            id="_IDText5"
+                            text="Validate Assessment"
+                        />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="_IDColumnListItem1">
+                        <cells>
+                            <Text
+                                id="_IDText6"
+                                text="{fModel>supplierid}"
+                            />
+                            <Text
+                                id="_IDText7"
+                                text="{fModel>supppliername}"
+                            />
+                            <Text
+                                id="_IDText8"
+                                text="{fModel>assessmentstatus}"
+                            />
+                            <Button
+                                id="_IDButton5"
+                                text="VALIDATE ASSESSMENT"
+                                press="onValidate"
+                                visible="{= ${fModel>assessmentstatus} === 'Complete'}"
+                            />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+        <Toolbar id="_ID01">
+            <ToolbarSpacer id="_IDG74" />
+
+            <Button
+                id="_IDGenButton2jdhf"
+                text="Cancel"
+                type="Emphasized"
+                press="onCancel"
+            />
+        </Toolbar>
+    </Dialog>
+</core:FragmentDefinition>

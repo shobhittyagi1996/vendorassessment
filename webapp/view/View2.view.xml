@@ -60,7 +60,7 @@
                         <WizardStep
                             id="ProductTypeStep"
                             title="Supplier Details"
-                            validated="true"
+                            validated="false"
                         >
                             <form:SimpleForm
                                 id="_IDGenSimpleForm1"
@@ -173,79 +173,8 @@
                                 </items>
                             </Table>
                         </WizardStep>
-                        <WizardStep
-                            id="selectinfo"
-                            validated="true"
-                            title="Select Question for Assessment"
-                            activate="additionalInfoValidation"
-                        >
-                            <Table
-                                id="idSupplierTable"
-                                items="{myModel>/}"
-                                autoPopinMode="true"
-                            >
-                                <headerToolbar>
-                                    <Toolbar id="_IDGenToolbar1">
-                                        <HBox
-                                            id="_IDGenHBox1"
-                                            alignItems="Center"
-                                            width="50%"
-                                            justifyContent="SpaceAround"
-                                        />
-                                    </Toolbar>
-                                </headerToolbar>
-                                <columns>
-                                    <Column id="_IDGenColumn1">
-                                        <Text
-                                            id="_IDGenText2"
-                                            text="Questions"
-                                        />
-                                    </Column>
-                                    <Column id="_IDGenColumn2">
-                                        <Text
-                                            id="_IDGenText3"
-                                            text="Select"
-                                        />
-                                        
-                                    </Column>
-                                    <Column id="_IDGenColumn21">
-                                        <Text
-                                            id="_IDGenText12"
-                                            text="Response Type"
-                                        />
-                                        
-                                    </Column>
-                                </columns>
-                                <items>
-                                    <ColumnListItem id="_IDGenColumnListItem1">
-                                        <cells>
-                                            <Text
-                                                id="_IDGenText6"
-                                                text="{myModel>question}"
-                                            />
-                                            <CheckBox
-                                                id="_IDGenCheckBox1"
-                                                text=""
-                                            />
-                                            <RadioButtonGroup
-                                                        id="GroupA"
-                                                    >
-                                                        <RadioButton
-                                                            id="_IDGenRadioButton1"
-                                                            text="Yes"
-                                                            selected="true"
-                                                        />
-                                                        <RadioButton
-                                                            id="_IDGenRadioButton2"
-                                                            text="No"
-                                                        />
-                                                    </RadioButtonGroup>
-                                                    
-                                        </cells>
-                                    </ColumnListItem>
-                                </items>
-                            </Table>
-                            <Toolbar id="_IDGenToolbar2">
+                      </Wizard>  
+            <Toolbar id="_IDGenToolbar2">
                                 <ToolbarSpacer id="_IDGenToolbarSpacer1" />
                                 <Button
                                     id="_IDGenButton1"
@@ -253,8 +182,7 @@
                                     type="Emphasized"
                                 />
                             </Toolbar>
-                        </WizardStep>
-                    </Wizard>
+                   
                 </content>
             </Page>
         </pages>
