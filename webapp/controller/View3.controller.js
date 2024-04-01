@@ -37,9 +37,29 @@ sap.ui.define(
                 "question": "With regards to bribery, corruption or dishonest dealings with third parties, in the last 3 years, has your company been subjected to any external investigation?Has such an investigation been concluded and/or are there currently any outstanding investigations against your company?"
             }];
             let sDropdown = [
-                { "responsetype": "Yes/No" },
-                { "responsetype": "Attachment Type" }];
-
+                {
+                  "filename": "State registration certificate of legal entity.xls",
+                  "mediaType": "sap-icon://excel-attachment",
+      
+                  "type": "State registration certificate of legal entity"
+      
+                },
+                {
+                  "filename": "Certificate of VAT registration.pdf",
+                  "mediaType": "sap-icon://pdf-attachment",
+      
+                  "type": "Certificate of VAT registration.png"
+                },
+                {
+                  "filename": "Tax registration certificate.txt",
+                  "mediaType": "sap-icon://doc-attachment",
+      
+                  "type": "Tax registration certificate"
+                }];
+              let gmodel = new JSONModel(sDropdown);
+              this.getView().setModel(gmodel, "sModel");
+      
+            
                 let Model = new JSONModel(data);
                 this.getView().setModel(Model, "uModel")
         },
